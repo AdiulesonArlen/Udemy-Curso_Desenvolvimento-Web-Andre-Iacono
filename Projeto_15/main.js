@@ -1,7 +1,9 @@
+let fruits = ['Banana', 'Abacate', 'Kiwi', 'Maçã', 'Cherry']
 let numberList = document.getElementById('numberList')
 
-for (i = 1; i <= 5; i++) {
+for (i = 0; i < 5; i++) {
   let listItem = document.createElement('li');
-  listItem.textContent = "Item " + i;
+  listItem.appendChild(document.createTextNode(fruits[i]))
+  // listItem.textContent = "Item " + i;
   numberList.appendChild(listItem);
 }
